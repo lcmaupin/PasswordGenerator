@@ -1,0 +1,71 @@
+/* Star Selector */
+* {
+    /* Includes padding and border when setting dimensions for elements */
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0275ff;
+    color: #eef1ef;
+    font-family: 'Lato', sans-serif;
+    /* Flexbox is used to center the div vertically and horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Sets body to be full vertical viewport height to center div vertically*/
+    height: 100vh;
+    /* Adds padding to improve display on smaller screens */
+    padding: 25px;
+}
+
+h2 {
+    margin: 10px 0 20px;
+    text-align: center;
+}
+
+.btn {
+    background-color: #0275ff;
+    border: none;
+    color: #eef1ef;
+    cursor: pointer;
+    padding: 8px 12px;
+}
+
+.option {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+#container {
+    background-color: #443850;
+    padding: 15px;
+    width: 350px;
+    border-radius: 5px;
+}
+
+#result-container {
+    background-color: #eef1ef;
+    color: #443850;
+    height: 35px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#clipboard {
+    font-size: 19px;
+}
+
+#generate {
+    font-size: 16px;
+    width: 100%;
+}
+
+@media (max-width: 400px) {
+    #result-container{
+        font-size: 14px;
+    }
+}
+
